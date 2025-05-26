@@ -6,9 +6,11 @@
 /*   By: dbinti-m <dbinti-m@student.42kl.edu.my>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/20 17:05:49 by dbinti-m          #+#    #+#             */
-/*   Updated: 2025/05/20 17:14:42 by dbinti-m         ###   ########.fr       */
+/*   Updated: 2025/05/22 21:31:25 by dbinti-m         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 void	*ft_memchr(const void *s, int c, size_t n)
 {

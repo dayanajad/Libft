@@ -6,9 +6,11 @@
 /*   By: dbinti-m <dbinti-m@student.42kl.edu.my>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/20 16:18:07 by dbinti-m          #+#    #+#             */
-/*   Updated: 2025/05/20 16:32:39 by dbinti-m         ###   ########.fr       */
+/*   Updated: 2025/05/22 21:28:13 by dbinti-m         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 char	*ft_strrchr(const char *s, int c)
 {

@@ -6,9 +6,11 @@
 /*   By: dbinti-m <dbinti-m@student.42kl.edu.my>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/17 16:02:47 by dbinti-m          #+#    #+#             */
-/*   Updated: 2025/05/18 22:02:42 by dbinti-m         ###   ########.fr       */
+/*   Updated: 2025/05/22 21:30:12 by dbinti-m         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 void	*ft_memmove(void *dest, const void *src, size_t n)
 {

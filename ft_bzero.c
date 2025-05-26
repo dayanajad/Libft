@@ -6,11 +6,11 @@
 /*   By: dbinti-m <dbinti-m@student.42kl.edu.my>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/17 09:08:14 by dbinti-m          #+#    #+#             */
-/*   Updated: 2025/05/17 09:10:24 by dbinti-m         ###   ########.fr       */
+/*   Updated: 2025/05/22 20:50:16 by dbinti-m         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <libft.h>
+#include "libft.h"
 
 void	ft_bzero(void *s, size_t n)
 {

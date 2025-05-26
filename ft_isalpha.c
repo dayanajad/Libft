@@ -6,11 +6,13 @@
 /*   By: dbinti-m <dbinti-m@student.42kl.edu.my>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/16 21:25:20 by dbinti-m          #+#    #+#             */
-/*   Updated: 2025/05/16 21:32:26 by dbinti-m         ###   ########.fr       */
+/*   Updated: 2025/05/22 20:58:24 by dbinti-m         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	isalpha(int c)
+#include "libft.h"
+
+int	ft_isalpha(int c)
 {
-	return ((c >= 'A' && c <= 'Z' || c >= 'a' && c <= 'z'));
+	return ((c >= 'A' && c <= 'Z') || (c >= 'a' && c <= 'z'));
 }

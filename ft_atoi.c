@@ -6,9 +6,11 @@
 /*   By: dbinti-m <dbinti-m@student.42kl.edu.my>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/20 18:41:36 by dbinti-m          #+#    #+#             */
-/*   Updated: 2025/05/20 19:01:48 by dbinti-m         ###   ########.fr       */
+/*   Updated: 2025/05/22 21:32:22 by dbinti-m         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 int	ft_atoi(const char *nptr)
 {

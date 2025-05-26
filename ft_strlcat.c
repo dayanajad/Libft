@@ -6,9 +6,11 @@
 /*   By: dbinti-m <dbinti-m@student.42kl.edu.my>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/19 06:37:18 by dbinti-m          #+#    #+#             */
-/*   Updated: 2025/05/19 06:45:09 by dbinti-m         ###   ########.fr       */
+/*   Updated: 2025/05/22 21:30:51 by dbinti-m         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 size_t	ft_strlcat(char *dst, const char *src, size_t dsize)
 {
