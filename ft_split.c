@@ -6,7 +6,7 @@
 /*   By: dbinti-m <dbinti-m@student.42kl.edu.my>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/21 12:23:14 by dbinti-m          #+#    #+#             */
-/*   Updated: 2025/05/22 21:34:58 by dbinti-m         ###   ########.fr       */
+/*   Updated: 2025/05/26 23:28:16 by dbinti-m         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -86,11 +86,12 @@ char	**ft_split(char const *s, char c)
 	{
 		while (*s && *s == c)
 			s++;
-		if (*s && !add_word(split, i++, &s, c))
+		if (*s && !add_word(split, i, &s, c))
 		{
-			free_split(split, i -1);
+			free_split(split, i);
 			return (NULL);
 		}
+		i++;
 	}
 	split[i] = NULL;
 	return (split);

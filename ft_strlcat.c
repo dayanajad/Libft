@@ -6,7 +6,7 @@
 /*   By: dbinti-m <dbinti-m@student.42kl.edu.my>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/19 06:37:18 by dbinti-m          #+#    #+#             */
-/*   Updated: 2025/05/22 21:30:51 by dbinti-m         ###   ########.fr       */
+/*   Updated: 2025/05/27 10:17:56 by dbinti-m         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,12 +27,12 @@ size_t	ft_strlcat(char *dst, const char *src, size_t dsize)
 	if (dst_len == dsize)
 		return (dsize + src_len);
 	i = 0;
-	while (src[i] && (dst_len + i + 1) < dsize)
+	while (src[i] && (dst_len + i) < (dsize - 1))
 	{
 		dst[dst_len + i] = src[i];
 		i++;
 	}
-	if (dst_len + i < dsize)
+	if (dsize > dst_len)
 		dst[dst_len + i] = '\0';
 	return (dst_len + src_len);
 }
