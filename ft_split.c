@@ -6,7 +6,7 @@
 /*   By: dbinti-m <dbinti-m@student.42kl.edu.my>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/21 12:23:14 by dbinti-m          #+#    #+#             */
-/*   Updated: 2025/05/26 23:28:16 by dbinti-m         ###   ########.fr       */
+/*   Updated: 2025/05/28 13:02:06 by dbinti-m         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -78,7 +78,7 @@ char	**ft_split(char const *s, char c)
 	if (!s)
 		return (NULL);
 	words = count_words(s, c);
-	split = malloc((words + 1) * sizeof(char *));
+	split = ft_calloc((words + 1), sizeof(char *));
 	if (!split)
 		return (NULL);
 	i = 0;
@@ -93,6 +93,5 @@ char	**ft_split(char const *s, char c)
 		}
 		i++;
 	}
-	split[i] = NULL;
 	return (split);
 }

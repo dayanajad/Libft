@@ -2,6 +2,7 @@ NAME = libft.a
 CC = cc
 CFLAGS = -Wall -Wextra -Werror
 RM = rm -f
+AR = ar rcs
 
 SRC = ft_isalpha.c ft_isdigit.c ft_isalnum.c ft_isascii.c ft_isprint.c \
       ft_strlen.c ft_memset.c ft_bzero.c ft_memcpy.c ft_memmove.c \
@@ -21,17 +22,16 @@ BONUS_OBJ = $(BONUS_SRC:.c=.o)
 all: $(NAME)
 
 $(NAME): $(OBJ)
-	$(AR) rcs $(NAME) $(OBJ)
+		$(AR) $(NAME) $(OBJ)
 
-bonus:
-	$(CC) $(CFLAGS) -c $(BONUS_SRC)
-	$(AR) rcs $(NAME) $(OBJ) $(BONUS_OBJ)
+bonus: $(OBJ) $(BONUS_OBJ)
+		$(AR) $(NAME) $(OBJ) $(BONUS_OBJ)
 
 clean:
-	$(RM) $(OBJ) $(BONUS_OBJ)
+		$(RM) $(OBJ) $(BONUS_OBJ)
 
 fclean: clean
-	$(RM) $(NAME)
+		$(RM) $(NAME)
 
 re: fclean all
 
