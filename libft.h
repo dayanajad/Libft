@@ -6,12 +6,12 @@
 /*   By: dbinti-m <dbinti-m@student.42kl.edu.my>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/22 19:35:15 by dbinti-m          #+#    #+#             */
-/*   Updated: 2025/05/28 14:00:29 by dbinti-m         ###   ########.fr       */
+/*   Updated: 2025/05/28 20:49:30 by dbinti-m         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef LIBFT_H
-#define LIBFT_H
+# define LIBFT_H
 
 # include <unistd.h>
 # include <stdlib.h>
