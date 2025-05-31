@@ -6,7 +6,7 @@
 /*   By: dbinti-m <dbinti-m@student.42kl.edu.my>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/21 07:35:36 by dbinti-m          #+#    #+#             */
-/*   Updated: 2025/05/27 11:28:44 by dbinti-m         ###   ########.fr       */
+/*   Updated: 2025/05/29 19:50:36 by dayana           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ void	*ft_calloc(size_t nmemb, size_t size)
 
 	if (nmemb == 0 || size == 0)
 		return (malloc(1));
-	if (size != 0 && nmemb > ((size_t) - 1) / size)
+	if (nmemb > ((size_t) - 1) / size)
 		return (NULL);
 	total = nmemb * size;
 	ptr = malloc(total);
